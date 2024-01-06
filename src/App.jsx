@@ -15,10 +15,11 @@ const FaqItem = ({ question, answer }) => {
 
         <button onClick={toggleAnswer} style={{ cursor: "pointer" }}>
           <img
+            className="plusMinus"
             src={
               isOpen
-                ? "/public/images/icon-minus.svg"
-                : "/public/images/icon-plus.svg"
+                ? "/public/images/icon-minus.jpg"
+                : "/public/images/icon-plus.jpg"
             }
             alt=""
           />
@@ -55,12 +56,12 @@ function App() {
     <div className="main">
       <img
         className="backgroundIMG"
-        src="/public/images/background-pattern-desktop.svg"
+        src="/public/images/background-pattern-desktop.jpg"
         alt="background"
       />
       <div className="container">
         <h1>
-          <img src="/public/images/icon-star.svg" alt="" />
+          <img src="/public/images/icon-star.jpg" alt="" />
           FAQs
         </h1>
         {faqData.map((faq, index) => (
