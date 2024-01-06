@@ -1,0 +1,73 @@
+@import url(https://fonts.google.com/specimen/Work+Sans);
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: hsl(275, 100%, 97%);
+  font-family: "Work Sans", sans-serif;
+}
+
+.Q {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.QnA {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.11);
+  padding: 10px 0;
+}
+.container {
+  width: 550px;
+  /* max-height: 550px; */
+  padding: 50px 30px;
+  border-radius: 15px;
+  background-color: white;
+  box-shadow: 0 0 50px -25px rgba(0, 0, 0, 0.603);
+  margin: 15% 0 0 0;
+}
+h1 {
+  display: flex;
+  align-items: center;
+  font-weight: 700;
+  font-size: 2.8rem;
+  margin-bottom: 25px;
+}
+h1 img {
+  height: 2rem;
+  margin-right: 25px;
+}
+
+h4 {
+  font-weight: 700;
+}
+h4:hover {
+  color: hsl(292, 80%, 40%);
+}
+button {
+  background: none;
+  border: none;
+}
+.ans {
+  margin: 15px 0;
+  text-align: justify;
+  color: hsl(292, 16%, 49%);
+  font-size: 16px;
+  font-weight: 500;
+}
+.backgroundIMG {
+  z-index: -1;
+  position: fixed;
+  width: 100%;
+}
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 375px) {
+  .container {
+    width: 250px;
+  }
+}
