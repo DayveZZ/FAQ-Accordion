@@ -17,7 +17,7 @@ const FaqItem = ({ question, answer }) => {
           <img
             className="plusMinus"
             src={isOpen ? "/public/icon-minus.jpg" : "/public/icon-plus.jpg"}
-            alt=""
+            alt="Show/Hide"
           />
         </button>
       </div>
@@ -57,7 +57,7 @@ function App() {
       />
       <div className="container">
         <h1>
-          <img src="/public/icon-star.jpg" alt="" />
+          <img src="/public/icon-star.jpg" alt="star" />
           FAQs
         </h1>
         {faqData.map((faq, index) => (
